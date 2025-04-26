@@ -1,15 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import SharedLayout from "@/components/Shared";
 import "./globals.css";
 
-const geistSans = Geist({
- variable: "--font-geist-sans",
+const inter = Inter({
  subsets: ["latin"],
+ variable: "--font-inter",
+ display: "swap",
 });
 
-const geistMono = Geist_Mono({
- variable: "--font-geist-mono",
+const sora = Sora({
  subsets: ["latin"],
+ variable: "--font-sora",
+ display: "swap",
 });
 
 export const metadata = {
@@ -21,8 +23,8 @@ export default function RootLayout({
  children,
 }: Readonly<{ children: React.ReactNode }>) {
  return (
-  <html lang="en">
-   <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+  <html lang="pt-br" className={`${inter.variable} ${sora.variable}`}>
+   <body>
     <SharedLayout>{children}</SharedLayout>
    </body>
   </html>

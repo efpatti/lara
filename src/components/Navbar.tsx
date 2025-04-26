@@ -5,13 +5,13 @@ const Navbar: React.FC = () => {
  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
  return (
-  <nav className="bg-white border-b border-[#48B5FB]/20 shadow-sm">
+  <nav className="font-inter bg-white border-b border-[#48B5FB]/20 shadow-sm">
    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div className="flex h-16 items-center justify-between">
      {/* Logo */}
      <div className="flex items-center">
       <div className="flex-shrink-0">
-       <h1 className="text-2xl font-cursive text-[#48B5FB]">
+       <h1 className="text-2xl font-bold text-[#48B5FB]">
         Lara<span className="text-xs align-top opacity-70">♡</span>
        </h1>
       </div>
@@ -22,28 +22,28 @@ const Navbar: React.FC = () => {
       <div className="ml-10 flex items-center space-x-8">
        <a
         href="#"
-        className="text-[#48B5FB] hover:text-[#48B5FB]/80 transition-colors font-medium relative group"
+        className="text-[#48B5FB] hover:text-[#48B5FB]/80 transition-colors font-semibold relative group"
        >
         Início
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#48B5FB] group-hover:w-full transition-all duration-300"></span>
        </a>
        <a
         href="#"
-        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-medium relative group"
+        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-semibold relative group"
        >
         Sobre
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#48B5FB] group-hover:w-full transition-all duration-300"></span>
        </a>
        <a
         href="#"
-        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-medium relative group"
+        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-semibold relative group"
        >
         Galeria
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#48B5FB] group-hover:w-full transition-all duration-300"></span>
        </a>
        <a
         href="#"
-        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-medium relative group"
+        className="text-gray-600 hover:text-[#48B5FB] transition-colors font-semibold relative group"
        >
         Contato
         <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#48B5FB] group-hover:w-full transition-all duration-300"></span>
@@ -97,25 +97,25 @@ const Navbar: React.FC = () => {
      <div className="px-2 pt-2 pb-3 space-y-1">
       <a
        href="#"
-       className="block px-3 py-2 rounded-md text-base font-medium text-[#48B5FB] bg-[#48B5FB]/10"
+       className="block px-3 py-2 rounded-md text-base font-semibold text-[#48B5FB] bg-[#48B5FB]/10"
       >
        Início
       </a>
       <a
        href="#"
-       className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
+       className="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
       >
        Sobre
       </a>
       <a
        href="#"
-       className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
+       className="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
       >
        Galeria
       </a>
       <a
        href="#"
-       className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
+       className="block px-3 py-2 rounded-md text-base font-semibold text-gray-600 hover:text-[#48B5FB] hover:bg-[#48B5FB]/10"
       >
        Contato
       </a>
