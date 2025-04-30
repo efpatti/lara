@@ -4,9 +4,18 @@
 
 import dynamic from "next/dynamic";
 import React from "react";
-import Puzzle from "@/components/Puzzle";
+// import Puzzle from "@/components/Puzzle";
 
-const HibiscusFlower = dynamic(() => import("@/components/HibiscusFlower"), {
+// const HibiscusFlower = dynamic(() => import("@/components/HibiscusFlower"), {
+//  ssr: false, // Desativa a renderização no lado do servidor
+//  loading: () => (
+//   <div className="min-h-screen flex items-center justify-center">
+//    Carregando...
+//   </div>
+//  ),
+// });
+
+const Game = dynamic(() => import("@/components/Game"), {
  ssr: false, // Desativa a renderização no lado do servidor
  loading: () => (
   <div className="min-h-screen flex items-center justify-center">
@@ -17,9 +26,9 @@ const HibiscusFlower = dynamic(() => import("@/components/HibiscusFlower"), {
 
 export default function Home() {
  return (
-  <main>
-   <Puzzle />
-   <HibiscusFlower />
+  <main className="text-black">
+   {/* <Puzzle /> */}
+   <Game />
   </main>
  );
 }
