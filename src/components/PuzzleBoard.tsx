@@ -22,14 +22,15 @@ export function PuzzleBoard({ pieces }: PuzzleBoardProps) {
  const handleSnap = () => {
   console.log("Peça encaixada!");
  };
-
  return (
-  <Stage width={800} height={600} className="bg-gray-100">
-   <Layer>
-    {pieces.map((piece, idx) => (
-     <PuzzlePiece key={idx} {...piece} onSnap={handleSnap} />
-    ))}
-   </Layer>
-  </Stage>
+  <div className="rounded-2xl overflow-hidden shadow-md border-4 border-blue-200">
+   <Stage width={800} height={600} className="bg-white">
+    <Layer>
+     {pieces.map((piece, idx) => (
+      <PuzzlePiece key={idx} {...piece} onSnap={handleSnap} />
+     ))}
+    </Layer>
+   </Stage>
+  </div>
  );
 }

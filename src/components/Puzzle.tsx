@@ -79,14 +79,16 @@ export default function Puzzle() {
  };
 
  return (
-  <main className="flex flex-col items-center justify-center min-h-screen p-8 gap-6">
-   <h1 className="text-3xl font-bold">Quebra-Cabeça</h1>
+  <main className="flex flex-col items-center justify-center min-h-screen p-8 gap-8 bg-gradient-to-br from-blue-50 to-purple-100">
+   <h1 className="text-4xl font-extrabold text-blue-700 drop-shadow-sm">
+    Quebra-Cabeça
+   </h1>
 
    <button
-    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+    className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-full hover:from-blue-600 hover:to-purple-600 transition shadow-lg"
     onClick={() => fileInputRef.current?.click()}
    >
-    Escolher imagem
+    📂 Escolher Imagem
    </button>
 
    <input
@@ -97,7 +99,9 @@ export default function Puzzle() {
     ref={fileInputRef}
    />
 
-   {pieces.length > 0 && <PuzzleBoard pieces={pieces} />}
+   <div className="mt-6 shadow-lg rounded-2xl p-4 bg-white">
+    {pieces.length > 0 && <PuzzleBoard pieces={pieces} />}
+   </div>
   </main>
  );
 }
