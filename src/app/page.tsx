@@ -1,19 +1,9 @@
 // src/app/page.tsx
 
-"use client"; // Adicione isso no topo do arquivo
+"use client";
 
 import dynamic from "next/dynamic";
 import React from "react";
-// import Puzzle from "@/components/Puzzle";
-
-// const HibiscusFlower = dynamic(() => import("@/components/HibiscusFlower"), {
-//  ssr: false, // Desativa a renderização no lado do servidor
-//  loading: () => (
-//   <div className="min-h-screen flex items-center justify-center">
-//    Carregando...
-//   </div>
-//  ),
-// });
 
 const Game = dynamic(() => import("@/components/Game"), {
  ssr: false, // Desativa a renderização no lado do servidor
@@ -26,8 +16,7 @@ const Game = dynamic(() => import("@/components/Game"), {
 
 export default function Home() {
  return (
-  <main className="text-black">
-   {/* <Puzzle /> */}
+  <main className="flex h-screen w-full justify-center items-center">
    <Game />
   </main>
  );

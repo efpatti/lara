@@ -1,5 +1,4 @@
 import { Inter, Sora } from "next/font/google";
-import SharedLayout from "@/components/Shared";
 import "./globals.css";
 
 const inter = Inter({
@@ -24,9 +23,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
  return (
   <html lang="pt-br" className={`${inter.variable} ${sora.variable}`}>
-   <body suppressHydrationWarning>
-    <SharedLayout>{children}</SharedLayout>
-   </body>
+   <body suppressHydrationWarning>{children}</body>
   </html>
  );
 }
