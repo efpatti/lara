@@ -45,7 +45,7 @@ export default function Puzzle({ onComplete, theme = "normal" }: PuzzleProps) {
  const currentTheme = themes[theme];
 
  // Imagem padrão do relacionamento (substitua pela sua)
- const defaultImage = "/lara.jpg";
+ const defaultImage = "/lara.jpeg";
 
  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
   const file = e.target.files?.[0];

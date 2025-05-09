@@ -64,7 +64,7 @@ export default function GamePortal() {
 
  return (
   <motion.div
-   className={`min-h-screen flex flex-col items-center justify-center p-6 transition-colors duration-500 ${
+   className={`min-h-screen w-full flex flex-col items-center justify-center p-6 transition-colors duration-500 ${
     selectedTheme
      ? THEMES[selectedTheme].bg
      : "bg-gradient-to-br from-blue-50 to-purple-100"
